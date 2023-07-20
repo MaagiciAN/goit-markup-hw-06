@@ -357,7 +357,7 @@ button {
     cursor: pointer;
 }
 .header-section {
-    width: 428px;
+    
         height: 70px;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -970,7 +970,6 @@ p {
         position: fixed;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         top: 0;
         left: 0;
         width: 100vw;
@@ -1000,6 +999,7 @@ p {
         margin-top: 80px;
         padding: 0;
         list-style: none;
+        margin-bottom: auto;
     }
     
     .mobile-menu .link {
@@ -1024,6 +1024,9 @@ p {
         justify-content: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .mobile-menu-item:first-child a {
+        color: var(--checkbox-background-color);
+    }
     .mobile-menu-link {
         
         color: var(--logo-second-color);
@@ -1039,6 +1042,7 @@ p {
         align-items: flex-start;
         gap: 40px;
         justify-content: center;
+        margin-bottom: 48px;
     }
     .mobile-menu-address {
         
