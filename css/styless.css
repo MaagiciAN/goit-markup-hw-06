@@ -91,9 +91,22 @@ ul {
     color: #404bbf;
 }
 .header-address {
-    font-style: normal;
     margin-left: auto;
 }
+.header-address-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--address-color);
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-address-list:first-child a {
+    margin-bottom: 12px;
+}
+@media only screen and (min-width: 1158px) {
 .header-address-list {
     font-size: 16px;
     line-height: 1.5;
@@ -103,7 +116,7 @@ ul {
     padding-bottom: 24px;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  }
 }
 .header-span-logo {
     color: var(--second-logo-color);
@@ -413,6 +426,7 @@ button {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 /* Base styles for small devices */
 .container {
@@ -459,8 +473,15 @@ button {
   }
 }
 .address-container {
-    display: flex;
+    font-style: normal;
     gap: 40px;
+}
+@media only screen and (min-width: 1158px) {
+   .address-container {
+    display: flex;
+    font-style: normal;
+    gap: 40px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .address-container {
@@ -500,7 +521,6 @@ img {
    .features-container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 72px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -523,10 +543,6 @@ img {
   .features-container {
     display: flex;
     gap: 24px;
-    width: 1128px;
-        height: 224px;
-        align-items: center;
-        justify-content: center;
   }
   .features-heading {
     font-weight: 500;
@@ -557,7 +573,23 @@ img {
 .team-container {
     display: flex;
     gap: 24px;
-
+}
+@media only screen and (max-width: 767px) {
+  .team-container {
+      display: flex;
+      gap: 72px;
+      flex-direction: column;
+      align-items: center;  
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+   .team-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .personal-container {
     padding: 32px 0px;
