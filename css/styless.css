@@ -378,7 +378,7 @@ ul {
         padding: 100px 0;
 }
 .footer-items {
-    margin-right: 120px;
+    /* margin-right: 120px; */
     margin-bottom: 0;
 }
 @media only screen and (min-width: 1158px) {
@@ -398,15 +398,18 @@ ul {
       align-items: baseline; 
   }
 }
+
 @media only screen and (min-width: 768px) {
   .footer-section {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-section {
     gap: 24px;
     margin-left: 108px;
+    width: 552px;
   }
 }
 .text-socials {
@@ -1052,7 +1055,7 @@ p {
     }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
    .footer-sub-container {
-    margin-left: 108px;
+    
   }
 }
 @media only screen and (min-width: 1158px) {
