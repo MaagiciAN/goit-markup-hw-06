@@ -154,6 +154,12 @@ ul {
     padding-top: 112px;
     padding-bottom: 112px;
 }
+@media only screen and (min-width: 1157px) {
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
          /* RETINA */
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -339,7 +345,8 @@ ul {
 }
 .team-section {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .team-header {
     font-size: 36px;
@@ -441,10 +448,15 @@ ul {
 }
 @media only screen and (max-width: 1157px) {
   .footer-items {
-    margin-bottom: 72px;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+}
 @media only screen and (min-width: 1158px) {
   .footer-section {
       display: flex;
@@ -460,7 +472,7 @@ ul {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-section {
-    gap: 24px;
+    gap: 72px 24px;
     margin-left: 108px;
     width: 552px;
   }
@@ -956,7 +968,6 @@ p {
    }
    @media only screen and (max-width: 1157px) {
      .footer-socials {
-    margin-bottom: 72px;
      }
    }
    .overlay {
@@ -1254,6 +1265,7 @@ p {
     .menu-mobile-container {
         position: fixed;
         display: flex;
+        padding-top: 80px;
         flex-direction: column;
         top: 0;
         left: 0;
@@ -1294,7 +1306,6 @@ p {
         padding: 0;
         list-style: none;
         margin-bottom: auto;
-        padding-top: 80px;
     }
     
     .mobile-menu .link {
